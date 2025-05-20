@@ -1,0 +1,266 @@
+
+
+body {
+    background: white;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top:130px;
+} 
+
+.about-text {
+    flex: 1;
+    text-align: left;
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.about-text h3 {
+    font-size: 22px;
+    color: #007bff;
+    margin-top: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-text ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.about-text ul li {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.benefits {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #007bff;
+}
+
+.benefit-item {
+    font-size: 16px;
+    margin: 5px 0;
+    background: white;
+    padding: 10px 12px;
+    border-radius: 5px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.benefit-item:hover {
+    transform: translateX(5px);
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Start Booking Button */
+.start-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.start-btn:hover {
+    background: #0056b3;
+}
+
+.about-pictures {
+    display: flex; /* Align the images in a row */
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Align the images vertically */
+    gap: 50px; /* Add space between the images */
+  }
+  
+  /* Styling for each image container */
+   /* .image2 {
+    width: 40%; /* Set the width of each image container to 40% */
+    /* text-align: center; /* Center the text inside the image container */
+  
+  .image1{
+    /* Set the width of each image container to 40% */
+    text-align: center;
+    
+  }
+  
+  /* Optional: If you want to make sure the images fit within the containers */
+  .img70 {
+    width: 50%; /* Make the images fill their container */
+    height: auto; /* Maintain the aspect ratio */
+  }
+
+.image71{
+    margin-right: 80px;
+}
+
+
+/* Existing Responsive Design (Retained) */
+@media (max-width: 1200px) {
+    .about-content {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    .about-image img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    .about-image img {
+        max-width: 100%;
+    }
+
+    .start-btn {
+        width: 100%;
+    }
+}
+
+/* Additional Responsiveness for Better Mobile View */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .about-text h2 {
+        font-size: 24px;
+    }
+
+    .about-text h3 {
+        font-size: 20px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+    .benefit-item {
+        font-size: 14px;
+    }
+
+    .about-pictures {
+        flex-direction: column; /* Stack images vertically */
+        gap: 20px;
+    }
+
+    .img70 {
+        width: 80%; /* Adjust image size */
+    }
+
+    .image71 {
+        margin-right: 0;
+    }
+
+    .start-btn {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 480px) {
+    .about-container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .about-text h2 {
+        font-size: 20px;
+    }
+
+    .about-text h3 {
+        font-size: 18px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .benefit-item {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .img70 {
+        width: 100%;
+    }
+
+    .start-btn {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

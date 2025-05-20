@@ -1,0 +1,234 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  position: fixed;
+  background-color: white;
+  z-index: 1000;
+  width: 95%;
+  margin: 0;
+  top: 0;
+  margin:0px;
+}
+
+.logo-links {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+}
+
+/* Navigation Links */
+.menu {
+  display: flex;
+  gap: 80px;
+  font-size: 20px;
+  font-weight: 300;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Initially hide the menu links on small screens */
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu a:hover {
+  color: gray;
+}
+
+/* Menu Icon (hamburger) for small screens */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+/* Icons Section */
+.icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.icon-btn {
+  background: blue;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.icon-btn:hover {
+  transform: scale(1.1);
+}
+
+.user-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.Notification-icon {
+  width: 23px;
+  height: 22px;
+  border-radius: 50%;
+}
+
+.img1 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 10px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.user-icon,
+.settings-icon,
+.search-home {
+  font-size: 19px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.user-icon:hover,
+.settings-icon:hover,
+.search-home:hover {
+  color: gray;
+  transform: scale(1.2);
+}
+
+/* ========== RESPONSIVENESS ========== */
+
+/* For medium screens (Tablets & Small Laptops) */
+@media (max-width: 1024px) {
+  .navbar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+  }
+  
+  .menu {
+    gap: 40px;
+    font-size: 18px;
+  }
+
+  .icons {
+    gap: 10px;
+  }
+
+  .icon-btn {
+    padding: 8px;
+    font-size: 12px;
+  }
+  
+  .user-icon,
+  .settings-icon,
+  .search-home {
+    font-size: 17px;
+  }
+
+  /* Show menu icon on medium screens */
+  .menu-icon {
+    display: block;
+  }
+
+  /* Hide menu links by default on small screens */
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
+    align-items: center;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+}
+
+/* For small screens (Mobile Phones) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .logo-links {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .icons {
+    gap: 5px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .icon-btn {
+    padding: 8px;
+    font-size: 10px;
+  }
+
+  .img1 {
+    width: 30px;
+    height: 30px;
+  }
+
+  .user-icon,
+  .settings-icon,
+  .search-home {
+    font-size: 16px;
+  }
+}
+
+/* For very small screens (extra small phones) */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 5px;
+  }
+
+  .logo img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .menu {
+    font-size: 14px;
+  }
+
+  .icons {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .user-icon,
+  .settings-icon,
+  .search-home {
+    font-size: 14px;
+  }
+}
